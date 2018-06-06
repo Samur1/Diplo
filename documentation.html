@@ -1,0 +1,802 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Diplo - Documentation</title>
+    <link rel="shortcut icon" href="img/logo.png" type="image/x-icon">
+    <!--==========LINKED STYLES==========!-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!--==========MY STYLES==========!-->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/keyframes.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body class="scrollbar">
+    <div class="documentation container-fluid">
+        <div class="row">
+            <div class="documentation__list col-2 col-md-4 col-lg-3 col-xl-2 d-none d-md-flex">
+                <a href="index.html" title="Go Home"><img class="documentation__logo" src="img/logo.png" alt="Go Home" width="50px"></a>
+                <span class="documentation__text_logo d-none d-md-block">Diplo</span>
+            </div>
+            <div class="col-12 col-sm-12 col-md-8 col-lg-9 col-xl-5 documentation__properties">
+                <div class="properties__text">
+                    <span class="properties__word"><span class="properties__letter">P</span>roperties</span>
+                </div>
+            </div>
+            <div class="d-none d-xl-block col-xl-5 documentation__tags">
+                <p class="tags__word">CSS</p>
+            </div>
+        </div>
+        <div class="row">
+            <!--==========FEATURES NAMES==========!-->
+            <div class="features scrollbar col-2 col-md-4 col-lg-3 col-xl-2 d-none d-md-block">
+                <!--==========B==========!-->
+                <div class="features__block">
+                    <button class="features__button">B</button>
+                    <div class="features__names">
+                        <a href="#background-color" onclick="cssBackColor()"><p>Background-color</p></a>
+                        <a href="#background-image" onclick="cssBackImage()"><p>Background-image</p></a>
+                        <a href="#border-color" onclick="cssBorderColor()"><p>Border-color</p></a>
+                        <a href="#border-radius" onclick="cssBorderRadius()"><p>Border-radius</p></a>
+                        <a href="#border-style" onclick="cssBorderStyle()"><p>Border-style</p></a>
+                        <a href="#border-width" onclick="cssBorderWidth()"><p>Border-width</p></a>
+                        <a href="#box-shadow" onclick="cssBoxShadow()"><p>Box-shadow</p></a>
+                    </div>
+                </div>
+                <!--==========C==========!-->
+                <div class="features__block">
+                    <button class="features__button">C</button>
+                    <div class="features__names">
+                        <a href="#color" onclick="cssColor()"><p>Color</p></a>
+                        <a href="#cursor" onclick="cssCursor()"><p>Cursor</p></a>
+                    </div>
+                </div>
+                <!--==========F==========!-->
+                <div class="features__block">
+                    <button class="features__button">F</button>
+                    <div class="features__names">
+                        <a href="#float" onclick="cssFloat()"><p>Float</p></a>
+                        <a href="#font-family" onclick="cssFontFamily()"><p>Font-family</p></a>
+                        <a href="#font-size" onclick="cssFontSize()"><p>Font-size</p></a>
+                        <a href="#font-style" onclick="cssFontStyle()"><p>Font-style</p></a>
+                        <a href="#font-weight" onclick="cssFontWeight()"><p>Font-weight</p></a>
+                    </div>
+                </div>
+                <!--==========H==========!-->
+                <div class="features__block">
+                    <button class="features__button">H</button>
+                    <div class="features__names">
+                        <a href="#height" onclick="cssHeight()"><p>Height</p></a>
+                    </div>
+                </div>
+                <!--==========L==========!-->
+                <div class="features__block">
+                    <button class="features__button">L</button>
+                    <div class="features__names">
+                        <a href="#letter-spacing" onclick="cssLetterSpacing()"><p>Letter-spacing</p></a>
+                        <a href="#line-height" onclick="cssLineHeight()"><p>Line-height</p></a>
+                        <a href="#list-type" onclick="cssListStyle()"><p>List-style-type</p></a>
+                    </div>
+                </div>
+                <!--==========M==========!-->
+                <div class="features__block">
+                    <button class="features__button">M</button>
+                    <div class="features__names">
+                        <a href="#margin" onclick="cssMargin()"><p>Margin</p></a>
+                    </div>
+                </div>
+                <!--==========O==========!-->
+                <div class="features__block">
+                    <button class="features__button">O</button>
+                    <div class="features__names">
+                        <a href="#opacity" onclick="cssOpacity()"><p>Opacity</p></a>
+                    </div>
+                </div>
+                <!--==========P==========!-->
+                <div class="features__block">
+                    <button class="features__button">P</button>
+                    <div class="features__names">
+                        <a href="#padding" onclick="cssPadding()"><p>Padding</p></a>
+                    </div>
+                </div>
+                <!--==========T==========!-->
+                <div class="features__block">
+                    <button class="features__button">T</button>
+                    <div class="features__names">
+                        <a href="#text-align" onclick="cssTextAlign()"><p>Text-align</p></a>
+                        <a href="#text-decoration" onclick="cssTextDecoration()"><p>Text-decoration</p></a>
+                        <a href="#text-shadow" onclick="cssTextShadow()"><p>Text-shadow</p></a>
+                        <a href="#text-transform" onclick="cssTextTransform()"><p>Text-transform</p></a>
+                    </div>
+                </div>
+                <!--==========V==========!-->
+                <div class="features__block">
+                    <button class="features__button">V</button>
+                    <div class="features__names">
+                        <a href="#visibility" onclick="cssVisibility()"><p>Visibility</p></a>
+                    </div>
+                </div>
+                <!--==========W==========!-->
+                <div class="features__block">
+                    <button class="features__button">W</button>
+                    <div class="features__names">
+                        <a href="#width" onclick="cssWidth()"><p>Width</p></a>
+                        <a href="#word-spacing" onclick="cssWordSpacing()"><p>Word-spacing</p></a>
+                    </div>
+                </div>
+            </div>
+            <!--==========FEATURES PROPERTIES==========!-->
+            <div class="features-properties scrollbar col-12 col-md-8 col-lg-9 col-xl-5 p-0">
+                <!--==========BACKGROUND-COLOR==========!-->
+                <div class="features-properties__background-color container" id="background-color">
+                    <p class="background-color__title d-sm-flex">Background-color</p>
+                    <fieldset>
+                        <label for="background-color__r">R</label>
+                        <input type="range" min="0" max="255" id="background-color__r" step="1" value="0">
+                        <output for="background-color__r" id="background-color__r_out">0</output>
+                    </fieldset>  
+                    <fieldset>
+                        <label for="background-color__g">G</label>
+                        <input type="range" min="0" max="255" id="background-color__g" step="1" value="0">
+                        <output for="background-color__g" id="background-color__g_out">0</output>
+                    </fieldset>
+                    <fieldset>
+                        <label for="background-color__b">B</label>
+                        <input type="range" min="0" max="255" id="background-color__b" step="1" value="0">
+                        <output for="background-color__b" id="background-color__b_out">0</output>
+                    </fieldset>  
+                    <output id="background-color__hex">#000000</output>
+                </div>
+                <!--==========BACKGROUND-IMAGE==========!-->
+                <div class="features-properties__background-image container" id="background-image">
+                    <p class="background-color__title d-sm-flex">Background-image</p>
+                    <div class="background-image__content d-sm-flex">
+                        <div class="content__upload">
+                            <input type="file" id="back_image__upload" class="back-hide">
+                            <label for="back_image__upload" class="back-new">Загрузить</label>
+                        </div>
+                        <div class="back-image-content__block" id="back_img__block"></div>
+                    </div>
+                </div>
+                <!--==========BORDER-COLOR==========!-->
+                <div class="features-properties__border-color container" id="border-color">
+                    <p class="background-color__title">Border-color</p>
+                    <div class="border-color__content">
+                        <fieldset>
+                            <label for="border-color__r">R</label>
+                            <input type="range" min="0" max="255" id="border-color__r" step="1" value="0">
+                            <output for="border-color__r" id="border-color__r_out">0</output>
+                        </fieldset>  
+                        <fieldset>
+                            <label for="border-color__g">G</label>
+                            <input type="range" min="0" max="255" id="border-color__g" step="1" value="0">
+                            <output for="border-color__g" id="border-color__g_out">0</output>
+                        </fieldset>
+                        <fieldset>
+                            <label for="border-color__b">B</label>
+                            <input type="range" min="0" max="255" id="border-color__b" step="1" value="0">
+                            <output for="border-color__b_out" id="border-color__b_out">0</output>
+                        </fieldset>  
+                        <output id="border-color__hex">#000000</output>
+                    </div>
+                </div>
+                <!--==========BORDER-RADIUS==========!-->
+                <div class="features-properties__border-radius container" id="border-radius">
+                    <p class="background-color__title d-sm-flex">Border-radius</p>
+                    <div class="border-radius__content d-sm-flex">
+                     <div class="border-radius-content__ranges d-flex flex-column">
+                        <label for="ranges__top-left" class="border-radius-content__label">Top left corner</label>
+                        <input type="range" min="0" max="200" id="ranges__top-left" step="1" value="0" oninput="borderRadius()">
+                        
+                        <label for="ranges__top-right" class="border-radius-content__label">Top right corner</label>
+                        <input type="range" min="0" max="200" id="ranges__top-right" step="1" value="0" oninput="borderRadius()">
+                        
+                        <label for="ranges__bottom-left" class="border-radius-content__label">Bottom left corner</label>
+                        <input type="range" min="0" max="200" id="ranges__bottom-left" step="1" value="0" oninput="borderRadius()">
+                        
+                        <label for="ranges__bottom-right" class="border-radius-content__label">Bottom right corner</label>
+                        <input type="range" min="0" max="200" id="ranges__bottom-right" step="1" value="0" oninput="borderRadius()">
+                    </div>
+                    <div class="border-radius-content__block" id="ranges__block"></div>
+                </div>
+            </div>
+            <!--==========BORDER-STYLE==========!-->
+            <div class="features-properties__border-style container" id="border-style">
+                <p class="background-color__title d-sm-flex">Border-style</p>
+                <div class="border-style__content d-sm-flex">
+                 <div class="content__radio d-flex flex-column">
+                    <label>
+                        <input id="style__dotted" class="radio" type="radio" name="style" onchange="borderStyle()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Dotted</span>
+                    </label>
+                    <label>
+                        <input id="style__dashed" class="radio" type="radio" name="style" onchange="borderStyle()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Dashed</span>
+                    </label>
+                    <label>
+                        <input id="style__solid" class="radio" type="radio" name="style" onchange="borderStyle()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Solid</span>
+                    </label>
+                    <label>
+                        <input id="style__double" class="radio" type="radio" name="style" onchange="borderStyle()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Double</span>
+                    </label>
+                    <label>
+                        <input id="style__groove" class="radio" type="radio" name="style" onchange="borderStyle()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Groove</span>
+                    </label>
+                    <label>
+                        <input id="style__ridge" class="radio" type="radio" name="style" onchange="borderStyle()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Ridge</span>
+                    </label>
+                    <label>
+                        <input id="style__inset" class="radio" type="radio" name="style" onchange="borderStyle()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Inset</span>
+                    </label>
+                    <label>
+                        <input id="style__outset" class="radio" type="radio" name="style" onchange="borderStyle()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Outset</span>
+                    </label>
+                </div>
+                <span class="border-style-content__text" id="style__text">Border</span>
+            </div>
+        </div>
+        <!--==========BORDER-WIDTH==========!-->
+        <div class="features-properties__border-width container" id="border-width">
+            <p class="background-color__title d-sm-flex">Border-width</p>
+            <div class="border-width__content d-sm-flex">
+                <div class="border-radius-content__ranges d-flex flex-column">
+                    <label for="ranges__top-left" class="border-radius-content__label">Top corner</label>
+                    <input type="range" min="2" max="50" id="width__top-left" step="1" value="2" oninput="borderWidth()">
+
+                    <label for="ranges__top-right" class="border-radius-content__label">Right corner</label>
+                    <input type="range" min="2" max="50" id="width__top-right" step="1" value="2" oninput="borderWidth()">
+
+                    <label for="ranges__bottom-left" class="border-radius-content__label">Left corner</label>
+                    <input type="range" min="2" max="50" id="width__bottom-left" step="1" value="2" oninput="borderWidth()">
+
+                    <label for="ranges__bottom-right" class="border-radius-content__label">Bottom corner</label>
+                    <input type="range" min="2" max="50" id="width__bottom-right" step="1" value="2" oninput="borderWidth()">
+                </div>
+                <span class="border-width-content__text float-sm-right" id="width__text">Width</span>
+            </div>
+        </div>
+        <!--==========BOX-SHADOW==========!-->
+        <div class="features-properties__box-shadow container" id="box-shadow">
+            <p class="background-color__title d-sm-flex">Box-shadow</p>
+            <div class="box-shadow__content d-sm-flex">
+                <div class="box-shadow-content__ranges d-flex flex-column">
+                    <label for="x-offset" class="border-radius-content__label">X Offset</label>
+                    <input type="range" min="0" max="20" id="x-offset" step="1" value="0" oninput="boxShadow()">
+
+                    <label for="y-offset" class="border-radius-content__label">Y Offset</label>
+                    <input type="range" min="0" max="20" id="y-offset" step="1" value="0" oninput="boxShadow()">
+
+                    <label for="blurring" class="border-radius-content__label">Blurring</label>
+                    <input type="range" min="0" max="30" id="blurring" step="1" value="0" oninput="boxShadow()">
+                </div>
+                <div class="box-shadow-content__block" id="shadow-block"></div>
+            </div>
+        </div>
+        <!--==========COLOR==========!-->
+        <div class="features-properties__color container" id="color">
+            <p class="background-color__title d-flex">Color</p>
+            <div class="color__content">
+                <fieldset>
+                    <label for="color__r">R</label>
+                    <input type="range" min="0" max="255" id="color__r" step="1" value="0">
+                    <output for="color__r" id="color__r_out">0</output>
+                </fieldset>  
+                <fieldset>
+                    <label for="color__g">G</label>
+                    <input type="range" min="0" max="255" id="color__g" step="1" value="0">
+                    <output for="color__g" id="color__g_out">0</output>
+                </fieldset>
+                <fieldset>
+                    <label for="color__b">B</label>
+                    <input type="range" min="0" max="255" id="color__b" step="1" value="0">
+                    <output for="color__b_out" id="color__b_out">0</output>
+                </fieldset>  
+                <output id="color__hex">#000000</output>
+            </div>
+        </div>
+        <!--==========CURSOR==========!-->
+        <div class="features-properties__cursor container" id="cursor">
+            <p class="background-color__title d-sm-flex">Cursor</p>
+            <div class="cursor__content d-sm-flex">
+                <div class="cursor-content__radio d-flex flex-column">
+                    <label>
+                        <input id="cursor__default" class="radio" type="radio" name="cursor" onchange="textCursor()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Default</span>
+                    </label>
+                    <label>
+                        <input id="cursor__crosshair" class="radio" type="radio" name="cursor" onchange="textCursor()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Crosshair</span>
+                    </label>
+                    <label>
+                        <input id="cursor__help" class="radio" type="radio" name="cursor" onchange="textCursor()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Help</span>
+                    </label>
+                    <label>
+                        <input id="cursor__move" class="radio" type="radio" name="cursor" onchange="textCursor()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Move</span>
+                    </label>
+                    <label>
+                        <input id="cursor__pointer" class="radio" type="radio" name="cursor" onchange="textCursor()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Pointer</span>
+                    </label>
+                    <label>
+                        <input id="cursor__progress" class="radio" type="radio" name="cursor" onchange="textCursor()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Progress</span>
+                    </label>
+                    <label>
+                        <input id="cursor__text" class="radio" type="radio" name="cursor" onchange="textCursor()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Text</span>
+                    </label>
+                    <label>
+                        <input id="cursor__wait" class="radio" type="radio" name="cursor" onchange="textCursor()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Wait</span>
+                    </label>
+                </div>
+                <span class="cursor-content__text" id="cursor__block">Hover</span>
+            </div>
+        </div>
+         <!--==========FLOAT==========!-->
+         <div class="features-properties__float container" id="float">
+            <p class="background-color__title d-flex">Float</p>
+            <div class="float__content d-flex">
+				<div class="float-content__radio d-flex flex-column">
+					<label>
+                		<input id="float__left" class="radio" type="radio" name="float" onchange="float()">
+                    	<span class="radio-custom"></span>
+                    	<span class="radio-text">Left</span>
+                	</label>
+	                <label>
+	                    <input id="float__right" class="radio" type="radio" name="float" onchange="float()">
+	                    <span class="radio-custom"></span>
+	                    <span class="radio-text">Right</span>
+	                </label>
+	                <label>
+	                    <input id="float__none" class="radio" type="radio" name="float" onchange="float()">
+	                    <span class="radio-custom"></span>
+	                    <span class="radio-text">None</span>
+	                </label>
+				</div>
+				<div class="float-content__block">
+					<div class="block__square" id="block__square"></div>
+				</div>
+            </div>
+        </div>
+        <!--==========FONT FAMILY==========!-->
+        <div class="features-properties__font-family container" id="font-family">
+        	<p class="background-color__title d-sm-flex">Font Family</p>
+            <div class="font-family__content d-sm-flex">
+            	<div class="family-content__radio d-sm-flex flex-column">
+            		<label>
+                		<input id="family__okruglizm" class="radio" type="radio" name="family" onchange="fontFamily()">
+                    	<span class="radio-custom"></span>
+                    	<span class="radio-text">Okruglizm</span>
+                	</label>
+	                <label>
+	                    <input id="family__roboto" class="radio" type="radio" name="family" onchange="fontFamily()">
+	                    <span class="radio-custom"></span>
+	                    <span class="radio-text">Roboto</span>
+	                </label>
+                    <label>
+                        <input id="family__roman" class="radio" type="radio" name="family" onchange="fontFamily()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Times New Roman</span>
+                    </label>
+                    <label>
+                        <input id="family__exo" class="radio" type="radio" name="family" onchange="fontFamily()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Exo</span>
+                    </label>
+            	</div>
+            	<div class="family__block">
+                    <p class="family-content__text" id="family__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>   
+                </div>
+            </div>
+        </div>
+        <!--==========FONT SIZE==========!-->
+        <div class="features-properties__font-size container" id="font-size">
+            <p class="background-color__title d-sm-flex">Font Size</p>
+            <div class="font-size_content d-sm-flex">
+                <div class="box-shadow-content__ranges d-flex flex-column">
+                    <label for="size__value" class="border-radius-content__label">Text size</label>
+                    <input type="range" min="16" max="30" id="size__value" step="1" value="0" oninput="fontSize()">
+                </div>
+                <div class="size__block">
+                    <p class="size-content__text" id="size__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>   
+                </div>
+            </div>
+        </div>
+        <!--==========FONT STYLE==========!-->
+        <div class="features-properties__font-style container" id="font-style">
+            <p class="background-color__title d-sm-flex">Font Style</p>
+            <div class="font-style_content d-sm-flex">
+                <div class="family-content__radio d-sm-flex flex-column">
+                    <label>
+                        <input id="style__cursive" class="radio" type="radio" name="font-style" onchange="fontStyle()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Cursive</span>
+                    </label>
+                    <label>
+                        <input id="style__normal" class="radio" type="radio" name="font-style" onchange="fontStyle()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Normal</span>
+                    </label>
+                    <label>
+                        <input id="style__oblique" class="radio" type="radio" name="font-style" onchange="fontStyle()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Oblique</span>
+                    </label>
+                </div>
+                 <div class="style__block">
+                    <p class="style-content__text" id="font_style__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>   
+                </div>
+            </div>
+        </div>
+        <!--==========FONT WEIGHT==========!-->
+        <div class="features-properties__font-weight container" id="font-weight">
+            <p class="background-color__title d-sm-flex">Font Weight</p>
+            <div class="font-weight_content d-sm-flex">
+                <div class="box-shadow-content__ranges d-flex flex-column">
+                    <label for="weight__value" class="border-radius-content__label">Text Weight</label>
+                    <input type="range" min="300" max="700" id="weight__value" step="100" value="0" oninput="fontWeight()">
+                </div>
+                <div class="weight__block">
+                    <p class="size-content__text" id="weight__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>   
+                </div>
+            </div>
+        </div>
+        <!--==========HEIGHT==========!-->
+        <div class="features-properties__height container" id="height">
+            <p class="background-color__title d-sm-flex">Height</p>
+            <div class="height__content d-sm-flex">
+            	<div class="box-shadow-content__ranges d-flex flex-column">
+                    <label for="height__value" class="border-radius-content__label">Height</label>
+                    <input type="range" min="100" max="150" id="height__value" step="1" value="0" oninput="heightBlock()">
+                </div>
+                <div class="height__block" id="height__block"></div>
+            </div>
+        </div>
+        <!--==========LETTER-SPACING==========!-->
+        <div class="features-properties__letter container" id="letter-spacing">
+            <p class="background-color__title d-sm-flex">Letter-spacing</p>
+            <div class="letter__content d-sm-flex">
+            	<div class="box-shadow-content__ranges d-flex flex-column">
+                    <label for="letter__value" class="border-radius-content__label">Letter Spacing</label>
+                    <input type="range" min="1" max="10" id="letter__value" step="1" value="0" oninput="letterSpacing()">
+                </div>
+                <div class="letter__block">
+                    <p class="letter__text" id="letter__text">Space</p>   
+                </div>
+            </div>
+        </div>
+        <!--==========LINE-HEIGHT==========!-->
+        <div class="features-properties__line container" id="line-height">
+            <p class="background-color__title d-sm-flex">Line-height</p>
+            <div class="line__content d-sm-flex">
+            	<div class="box-shadow-content__ranges d-flex flex-column">
+                    <label for="line__value" class="border-radius-content__label">Line Height</label>
+                    <input type="range" min="1.5" max="4" id="line__value" step="0.1" value="0" oninput="lineHeight()">
+                </div>
+                <div class="weight__block">
+                    <p class="size-content__text" id="line__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>   
+                </div>
+            </div>
+        </div>
+        <!--==========LIST-STYLE-TYPE==========!-->
+        <div class="features-properties__list container" id="list-type">
+            <p class="background-color__title d-sm-flex">List-style-type</p>
+            <div class="list__content d-sm-flex">
+            	<div class="cursor-content__radio d-sm-flex flex-column">
+                    <label>
+                        <input id="list__circle" class="radio" type="radio" name="list" onchange="listType()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Circle</span>
+                    </label>
+                    <label>
+                        <input id="list__disk" class="radio" type="radio" name="list" onchange="listType()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Disc</span>
+                    </label>
+                    <label>
+                        <input id="list__square" class="radio" type="radio" name="list" onchange="listType()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Square</span>
+                    </label>
+                    <label>
+                        <input id="list__decimal" class="radio" type="radio" name="list" onchange="listType()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">decimal</span>
+                    </label>
+                    <label>
+                        <input id="list__lower_alpha" class="radio" type="radio" name="list" onchange="listType()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Lower-aplha</span>
+                    </label>
+                    <label>
+                        <input id="list__upper_alpha" class="radio" type="radio" name="list" onchange="listType()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Upper-Alpha</span>
+                    </label>
+                    <label>
+                        <input id="list__lower_roman" class="radio" type="radio" name="list" onchange="listType()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Lower-roman</span>
+                    </label>
+                    <label>
+                        <input id="list__upper_roman" class="radio" type="radio" name="list" onchange="listType()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Upper-roman</span>
+                    </label>
+                    <label>
+                        <input id="list__none" class="radio" type="radio" name="list" onchange="listType()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">None</span>
+                    </label>
+                </div>
+                <span class="list-content__list">
+                	<ul id="list__ul">
+                		<li>Element #1</li>
+                		<li>Element #2</li>
+                		<li>Element #3</li>
+                		<li>Element #4</li>
+                		<li>Element #5</li>
+                		<li>Element #6</li>
+                	</ul>
+                </span>
+            </div>
+        </div>
+        <!--==========MARGIN==========!-->
+        <div class="features-properties__margin container" id="margin">
+            <p class="background-color__title d-sm-flex">Margin</p>
+            <div class="margin__content d-sm-flex">
+            	<div class="border-radius-content__ranges d-flex flex-column">
+                    <label for="margin-top" class="border-radius-content__label">Margin top/bottom</label>
+                    <input type="range" min="0" max="60" id="margin-top" step="1" value="0" oninput="margin()">
+                        
+                    <label for="margin-left" class="border-radius-content__label">Margin left/right</label>
+                    <input type="range" min="0" max="60" id="margin-left" step="1" value="0" oninput="margin()">
+                </div>
+                <div class="margin__block">
+					<div class="margin__square" id="margin__square"></div>
+				</div>
+            </div>
+        </div>
+        <!--==========OPACITY==========!-->
+        <div class="features-properties__opacity container" id="opacity">
+            <p class="background-color__title d-sm-flex">Opacity</p>
+            <div class="opacity__content d-sm-flex">
+            	<div class="box-shadow-content__ranges d-flex flex-column">
+                    <label for="opacity__value" class="border-radius-content__label">Opacity</label>
+                    <input type="range" min="0" max="1" id="opacity__value" step="0.1" value="1" oninput="opacity()">
+                </div>
+                <div class="height__block" id="opacity__block"></div>
+            </div>
+        </div>
+        <!--==========PADDING==========!-->
+        <div class="features-properties__padding container" id="padding">
+            <p class="background-color__title d-sm-flex">Padding</p>
+            <div class="padding__content d-sm-flex">
+            	<div class="border-radius-content__ranges d-flex flex-column">
+                    <label for="padding-top" class="border-radius-content__label">Padding top/bottom</label>
+                    <input type="range" min="0" max="60" id="padding-top" step="1" value="0" oninput="padding()">
+                        
+                    <label for="padding-left" class="border-radius-content__label">Padding left/right</label>
+                    <input type="range" min="0" max="60" id="padding-left" step="1" value="0" oninput="padding()">
+                </div>
+                <div class="margin__block d-flex justify-content-center" id="padding__block">
+					<p id="padding__square">Lorem ipsum dolor sit amet, consectetur adipisicing elit</p>
+				</div>
+            </div>
+        </div>
+         <!--==========TEXT-ALIGN==========!-->
+        <div class="features-properties__text-align container" id="text-align">
+            <p class="background-color__title d-sm-flex">Text-align</p>
+            <div class="text-align__content d-sm-flex">
+            	<div class="family-content__radio d-flex flex-column">
+                    <label>
+                        <input id="align__justify" class="radio" type="radio" name="text-align" onchange="textAlign()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Justify</span>
+                    </label>
+                    <label>
+                        <input id="align__center" class="radio" type="radio" name="text-align" onchange="textAlign()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Center</span>
+                    </label>
+                    <label>
+                        <input id="align__left" class="radio" type="radio" name="text-align" onchange="textAlign()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Left</span>
+                    </label>
+                    <label>
+                        <input id="align__right" class="radio" type="radio" name="text-align" onchange="textAlign()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Right</span>
+                    </label>
+                </div>
+                <div class="text-align-content__block">
+                    <p class="block-align__text" id="text-align__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus incidunt, et fugit illo architecto deserunt.</p>   
+                </div>
+            </div>
+        </div>
+         <!--==========TEXT-DECORATION==========!-->
+        <div class="features-properties__text-decoration container" id="text-decoration">
+            <p class="background-color__title d-sm-flex">Text-decoration</p>
+            <div class="text-decoration__content d-sm-flex">
+            	<div class="family-content__radio d-flex flex-column">
+                    <label>
+                        <input id="decoration__line-through" class="radio" type="radio" name="text-decoration" onchange="textDecoration()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Line-through</span>
+                    </label>
+                    <label>
+                        <input id="decoration__overline" class="radio" type="radio" name="text-decoration" onchange="textDecoration()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Overline</span>
+                    </label>
+                    <label>
+                        <input id="decoration__underline" class="radio" type="radio" name="text-decoration" onchange="textDecoration()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Underline</span>
+                    </label>
+                    <label>
+                        <input id="decoration__none" class="radio" type="radio" name="text-decoration" onchange="textDecoration()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">None</span>
+                    </label>
+                </div>
+                <div class="letter__block" id="decoration__block">
+                    <p class="letter__text" id="decoration__text">Decoration</p>   
+                </div>
+            </div>
+        </div>
+        <!--==========TEXT-SHADOW==========!-->
+        <div class="features-properties__text-shadow container" id="text-shadow">
+            <p class="background-color__title d-sm-flex">Text-shadow</p>
+            <div class="text-shadow__content d-sm-flex">
+            	<div class="box-shadow-content__ranges d-flex flex-column">
+                    <label for="x-offset-text" class="border-radius-content__label">X Offset</label>
+                    <input type="range" min="0" max="20" id="x-offset-text" step="1" value="0" oninput="textShadow()">
+
+                    <label for="y-offset-text" class="border-radius-content__label">Y Offset</label>
+                    <input type="range" min="0" max="20" id="y-offset-text" step="1" value="0" oninput="textShadow()">
+
+                    <label for="blurring" class="border-radius-content__label">Blurring</label>
+                    <input type="range" min="0" max="30" id="blurring-text" step="1" value="0" oninput="textShadow()">
+                </div>
+                <div class="letter__block" id="text-shadow__block">
+                    <p class="letter__text" id="text-shadow__text">Shadow</p>   
+                </div>
+            </div>
+        </div>
+        <!--==========TEXT-TRANSFORM==========!-->
+        <div class="features-properties__text-shadow container" id="text-transform">
+            <p class="background-color__title d-sm-flex">Text-transform</p>
+            <div class="text-shadow__content d-sm-flex">
+            	<div class="family-content__radio d-flex flex-column">
+                    <label>
+                        <input id="transform__capitalize" class="radio" type="radio" name="text-transform" onchange="textTransform()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Capitalize</span>
+                    </label>
+                    <label>
+                        <input id="transform__lowercase" class="radio" type="radio" name="text-transform" onchange="textTransform()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Lowercase</span>
+                    </label>
+                    <label>
+                        <input id="transform__uppercase" class="radio" type="radio" name="text-transform" onchange="textTransform()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Uppercase</span>
+                    </label>
+                    <label>
+                        <input id="transform__none" class="radio" type="radio" name="text-transform" onchange="textTransform()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">None</span>
+                    </label>
+                </div>
+                <div class="text-align-content__block">
+                    <p class="block-align__text" id="text-transform__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus incidunt, et fugit illo architecto deserunt.</p>   
+                </div>
+            </div>
+        </div>
+         <!--==========VISIBILITY==========!-->
+        <div class="features-properties__text-shadow container" id="visibility">
+            <p class="background-color__title d-sm-flex">Visibility</p>
+            <div class="text-shadow__content d-sm-flex">
+                <div class="visibility__radio d-flex flex-column">
+                    <label>
+                        <input id="visibility__yes" class="radio" type="radio" name="visibilityBlock" onchange="visibilityBlock()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Visible</span>
+                    </label>
+                    <label>
+                        <input id="visibility__no" class="radio" type="radio" name="visibilityBlock" onchange="visibilityBlock()">
+                        <span class="radio-custom"></span>
+                        <span class="radio-text">Hidden</span>
+                    </label>
+                </div>
+                <div class="visibility__block" id="visibility__block"></div>
+            </div>
+        </div>
+         <!--==========WIDTH==========!-->
+        <div class="features-properties__height container" id="width">
+            <p class="background-color__title d-sm-flex">Width</p>
+            <div class="height__content d-sm-flex">
+                <div class="box-shadow-content__ranges d-flex flex-column">
+                    <label for="width__value" class="border-radius-content__label">Width</label>
+                    <input type="range" min="100" max="150" id="width__value" step="1" value="0" oninput="widthBlock()">
+                </div>
+                <div class="height__block" id="width__block"></div>
+            </div>
+        </div>
+         <!--==========WORD-SPACING==========!-->
+        <div class="features-properties__height container" id="word-spacing">
+            <p class="background-color__title d-sm-flex">Word-spacing</p>
+            <div class="height__content d-sm-flex">
+                <div class="box-shadow-content__ranges d-flex flex-column">
+                    <label for="spacing__value" class="border-radius-content__label">Width</label>
+                    <input type="range" min="0" max="15" id="spacing__value" step="1" value="0" oninput="wordSpacing()">
+                </div>
+                <div class="weight__block">
+                    <p class="size-content__text" id="spacing__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>   
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="features-code d-none d-xl-block col-xl-5 p-0">
+       <div class="css-code">
+       		<span id="open-tag" class="css-tag"></span>	
+       		<span id="open-bracket">{</span><br>	
+       		<p id="css-text" class="css-text"></p>
+       		<span id="close-bracket">}</span>	
+       </div>
+       <div class="html-code__block">
+       		<p class="block__word">HTML</p>
+       	</div>
+       <div class="html-code">
+       		<span id="open-html-tag" class="html-tag"></span>
+       		<span id="tag-class" class="html-class"></span>
+       		<span id="class-name" class="class-name"></span>
+       		<span id="tag-class-close"></span>
+       		<span id="close-bracket-html" class="html-tag"></span>
+            <span id="lorem-text"></span>
+       		<span id="close-html-tag" class="html-tag"></span>
+       </div>
+    </div>
+</div>
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+<script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+</body>
+</html>
